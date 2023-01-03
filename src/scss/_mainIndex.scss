@@ -1,21 +1,32 @@
-main{
+.mainIndex{
     background-color: rgb(235, 215, 215);
-    padding: 20px;
+    padding: 10px;
+    .tarjetas{
+        display: flex;
+        justify-content: center;
+    }
         .tarjeta1{
             display: flex;
-            flex-direction: row;
             justify-content: space-around;
-            margin-top: 30px;
+            flex-wrap: wrap;
+            margin: 30px;
+            padding: 10px;
             img{
-                width: 500px;
+                width: 450px;
                 height: 250px;
             }
             .tarjeta1-nosotros{
-                width: 500px;
+                width: 450px;
                 height: 250px;
             }
             p{
-                margin-top: 10px;
+                text-align: justify;
+                padding-top: 10px;
             }
         } 
+}
+
+// Adaptado para pantallas pequeñas
+
+@media (max-width: 1000px){
 }

@@ -1,5 +1,5 @@
 footer{
-    height: 50px;
+    min-height: 50px;
     background-color: rgb(168, 122, 52);
     padding: 20px;
     display: flex;
@@ -9,6 +9,16 @@ footer{
         .fa-brands{
             padding: 10px;
             font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    footer{
+        flex-direction: column-reverse;
+        text-align: center;
+        .redes{
+            padding-bottom: 10px;
         }
     }
 }

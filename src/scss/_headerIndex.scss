@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     height: 100vh;
     max-width: 100vw;
     display: flex;
@@ -28,8 +29,19 @@
         border-radius: 50px;
         color: white;
         text-decoration: none;
-        margin-top: 70px;
+        margin-top: 100px;
     }
 }
 
 // Adaptabción para pantallas pequeñas
+
+@media (max-width: 860px){
+    .headerIndex{
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 25px;
+        }
+    }
+}
