@@ -1,0 +1,14 @@
+footer{
+    height: 50px;
+    background-color: rgb(168, 122, 52);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .redes{
+        .fa-brands{
+            padding: 10px;
+            font-size: 30px;
+        }
+    }
+}

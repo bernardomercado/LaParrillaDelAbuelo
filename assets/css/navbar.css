@@ -1,0 +1,18 @@
+.navegador {
+  background-color: black;
+}
+.navegador > ul {
+  list-style-type: none;
+  display: flex;
+}
+.navegador > ul > li > a {
+  text-decoration: none;
+  color: rgb(255, 227, 66);
+}
+.navegador > ul > li > ul {
+  display: none;
+}
+.navegador > ul > li > ul > li > a {
+  text-decoration: none;
+  color: rgb(255, 227, 66);
+}

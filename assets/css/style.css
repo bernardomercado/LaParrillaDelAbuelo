@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+body .navegador {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+body .navegador #check {
+  display: none;
+}
+body .navegador label {
+  display: none;
+}
+body .navegador label i {
+  color: rgb(168, 122, 52);
+  font-size: 40px;
+  padding: 8px;
+  cursor: pointer;
+}
+body .navegador label i:hover {
+  border: solid 2px rgb(168, 122, 52);
+  border-radius: 5px;
+}
+body .navegador .logo img {
+  height: 50px;
+}
+body .navegador ul {
+  list-style: none;
+  display: flex;
+}
+body .navegador ul li {
+  position: relative;
+}
+body .navegador ul li:hover ul {
+  display: block;
+}
+body .navegador ul li a {
+  display: block;
+  color: rgb(168, 122, 52);
+  padding: 20px;
+  font-size: 20px;
+}
+body .navegador ul li a:hover {
+  color: white;
+  background-color: rgb(168, 122, 52);
+}
+body .navegador ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+body .navegador ul li ul li {
+  width: 100%;
+}
+body .navegador ul li ul li a:hover {
+  background-color: rgb(167, 135, 89);
+}
+
+@media (max-width: 900px) {
+  .navegador {
+    padding: 20px;
+  }
+  .navegador .checkbtn {
+    display: block;
+  }
+  .navegador #check:checked ~ .navbar {
+    display: block;
+  }
+  .navegador .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+  }
+  .navegador .navbar ul {
+    flex-direction: column;
+  }
+  .navegador .navbar ul li {
+    width: 100%;
+  }
+  .navegador .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  .navegador .navbar ul li ul li a {
+    padding: 10px 100px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.headerIndex {
+  background-image: url(/assets/img/fondo-index2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.headerIndex h1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  font-style: italic;
+}
+.headerIndex p {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+.headerIndex .btn {
+  border: 0 solid black;
+  background-color: rgb(168, 122, 52);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  margin-top: 70px;
+}
+
+main {
+  background-color: rgb(235, 215, 215);
+  padding: 20px;
+}
+main .tarjeta1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+main .tarjeta1 img {
+  width: 500px;
+  height: 250px;
+}
+main .tarjeta1 .tarjeta1-nosotros {
+  width: 500px;
+  height: 250px;
+}
+main .tarjeta1 p {
+  margin-top: 10px;
+}
+
+footer {
+  height: 50px;
+  background-color: rgb(168, 122, 52);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .redes .fa-brands {
+  padding: 10px;
+  font-size: 30px;
+}
+
+.headerMenu {
+  background-image: url(/assets/img/menu.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.headerMenu h2 {
+  color: white;
+  font-size: 100px;
+  padding-bottom: 50px;
+}
+
+.mainMenu h3 {
+  margin-bottom: 20px;
+}
+.mainMenu .tarjetas {
+  display: flex;
+}
+.mainMenu .tarjetas .tarjeta {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.25seg;
+}
+.mainMenu .tarjetas .tarjeta:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.mainMenu .tarjetas .tarjeta img {
+  width: 100%;
+}
+.mainMenu .tarjetas .tarjeta p {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.mainMenu .tarjetas .tarjeta a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 5px;
+}
