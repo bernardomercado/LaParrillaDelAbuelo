@@ -215,6 +215,7 @@ footer .redes .fa-brands {
   background-image: url("../img/menu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -224,17 +225,27 @@ footer .redes .fa-brands {
 .headerMenu h2 {
   color: white;
   font-size: 100px;
+  font-style: italic;
   padding-bottom: 50px;
 }
 
+.mainMenu {
+  background-color: rgb(235, 215, 215);
+  padding: 10px;
+}
 .mainMenu h3 {
-  margin-bottom: 20px;
+  margin: 20px 40px 30px;
+  text-decoration: underline;
+  font-size: 25px;
 }
 .mainMenu .tarjetas {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .mainMenu .tarjetas .tarjeta {
-  width: 250px;
+  width: 200px;
   height: 250px;
   background-color: white;
   border: 1px solid black;
@@ -243,6 +254,7 @@ footer .redes .fa-brands {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: all 0.25seg;
+  position: relative;
 }
 .mainMenu .tarjetas .tarjeta:hover {
   transform: translateY(-15px);
@@ -250,15 +262,22 @@ footer .redes .fa-brands {
 }
 .mainMenu .tarjetas .tarjeta img {
   width: 100%;
+  height: 50%;
 }
 .mainMenu .tarjetas .tarjeta p {
   padding-top: 10px;
   padding-bottom: 15px;
+  font-weight: bold;
 }
 .mainMenu .tarjetas .tarjeta a {
+  background-color: rgb(168, 122, 52);
   text-decoration: none;
   color: black;
   border: 1px solid black;
   border-radius: 50px;
-  padding: 5px;
+  padding: 5px 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 15px;
+  left: 48px;
 }

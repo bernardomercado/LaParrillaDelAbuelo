@@ -1,11 +1,18 @@
 .mainMenu{
+    background-color: rgb(235, 215, 215);
+    padding: 10px;
     h3{
-        margin-bottom: 20px;
+        margin: 20px 40px 30px;
+        text-decoration:underline;
+        font-size: 25px;
     }
     .tarjetas{
         display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 30px;
         .tarjeta{
-            width: 250px;
+            width: 200px;
             height: 250px;
             background-color: white;
             border: 1px solid black;
@@ -14,24 +21,32 @@
             box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
             overflow: hidden;
             transition: all 0.25seg;
+            position: relative;
             &:hover{
                 transform: translateY(-15px);
                 box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
             }
             img{
                 width: 100%;
+                height: 50%;
 
             }
             p{
                 padding-top: 10px;
                 padding-bottom: 15px;
+                font-weight: bold;
             }
             a{
+                background-color: rgb(168, 122, 52);
                 text-decoration: none;
                 color: black;
                 border: 1px solid black;
                 border-radius: 50px;
-                padding: 5px;
+                padding: 5px 20px;
+                font-weight: bold;
+                position: absolute;
+                bottom: 15px;
+                left: 48px
             }
         }
     }
