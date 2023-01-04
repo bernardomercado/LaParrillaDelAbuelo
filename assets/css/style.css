@@ -150,6 +150,7 @@ body .navegador ul li ul li a:hover {
 .mainIndex {
   background-color: rgb(235, 215, 215);
   padding: 10px;
+  width: 100%;
 }
 .mainIndex .tarjetas {
   display: flex;
@@ -159,7 +160,6 @@ body .navegador ul li ul li a:hover {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 30px;
   padding: 10px;
 }
 .mainIndex .tarjeta1 img {
@@ -175,6 +175,20 @@ body .navegador ul li ul li a:hover {
   padding-top: 10px;
 }
 
+@media (max-width: 500px) {
+  .mainIndex img {
+    max-width: 350px;
+    height: 250px;
+    padding: 10px;
+  }
+  .mainIndex .imagen3 {
+    min-width: 350px;
+  }
+  .mainIndex .tarjeta1-nosotros {
+    max-width: 350px;
+    max-height: 250px;
+  }
+}
 footer {
   min-height: 50px;
   background-color: rgb(168, 122, 52);
@@ -198,7 +212,7 @@ footer .redes .fa-brands {
   }
 }
 .headerMenu {
-  background-image: url(../img/menu.jpg);
+  background-image: url("../img/menu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
