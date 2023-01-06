@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo1.png" type="image/x-icon">
     <title>La Parrilla del Abuelo</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -45,26 +47,32 @@
     <main class="mainIndex">
         <section classt="tarjetas">
             <div class="tarjeta1">
-                <div class="tarjeta1-nosotros">
+                <div class="tarjeta1-nosotros" data-aos="fade-right" data-aos-duration="2000">
                     <h2>Nuestra Historia</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur quisquam, pariatur sapiente iste dolorem, reprehenderit tempore, nihil dolores nemo harum quibusdam unde repellendus maxime aperiam accusamus laborum natus! Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia et tempore error neque. Explicabo odio consequatur at eius non sequi asperiores maiores nesciunt nobis fuga.</p>
                 </div>
-                <img src="./assets/img/nuestra-historia.jpg" alt="Nosotros">
+                <div data-aos="zoom-in-left" data-aos-duration="2000">
+                    <img src="./assets/img/nuestra-historia.jpg" alt="Nosotros">
+                </div>
             </div> 
             <div class="tarjeta1">
-                <div class="tarjeta1-nosotros">
+                <div class="tarjeta1-nosotros" data-aos="fade-right" data-aos-duration="2000">
                     <h2>Nuestra Carne</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur quisquam, pariatur sapiente iste dolorem, reprehenderit tempore, nihil dolores nemo harum quibusdam unde repellendus maxime aperiam accusamus laborum natus! Nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia et tempore error neque. Explicabo odio consequatur at eius non sequi asperiores maiores nesciunt nobis fuga.</p>
                 </div>
-                <img src="./assets/img/nuestra-carne.jpg" alt="NuestraCarne">
+                <div data-aos="zoom-in-left" data-aos-duration="2000">
+                    <img src="./assets/img/nuestra-carne.jpg" alt="NuestraCarne">
+                </div>
             </div>
             <div class="tarjeta1">
-                <div class="tarjeta1-nosotros">
+                <div class="tarjeta1-nosotros" data-aos="fade-right" data-aos-duration="2000">
                     <h2>Testimonios</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ullam, libero minima natus veritatis dolor ut alias quidem. Unde, eos?</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti suscipit voluptates, a voluptate quisquam distinctio quibusdam deleniti dolorem pariatur veniam cumque minima perspiciatis commodi tempora dolores doloribus quod? Quisquam, pariatur?</p>
                 </div>
-                <img class="imagen3" src="./assets/img/testimonios.jpg" alt="Testimonios">
+                <div data-aos="zoom-in-left" data-aos-duration="2000">
+                    <img class="imagen3" src="./assets/img/testimonios.jpg" alt="Testimonios">
+                </div>
             </div>  
         </section>
     </main>
@@ -81,6 +89,9 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
