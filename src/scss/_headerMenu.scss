@@ -7,12 +7,30 @@
     height: 100vh;
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    h2{
+    h1{
         color: white;
         font-size: 100px;
         font-style: italic;
-        padding-bottom: 50px;
+        text-align: center;
+    }
+    p{
+        color: white;
+        font-size: 35px;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600px){
+    .headerMenu{
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 25px;
+        }
     }
 }
