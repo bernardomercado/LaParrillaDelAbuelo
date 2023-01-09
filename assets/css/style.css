@@ -186,7 +186,7 @@ body .navegador ul li ul li a:hover {
   }
   .mainIndex .tarjeta1-nosotros {
     max-width: 350px;
-    max-height: 250px;
+    min-height: 300px;
   }
 }
 footer {
@@ -587,6 +587,9 @@ aside .mapa {
   text-align: justify;
   padding: 10px;
 }
+.mainEventos .contenedor .card .texto p {
+  padding-top: 10px;
+}
 .mainEventos .contenedor .card img {
   width: 450px;
   height: 250px;
@@ -596,9 +599,10 @@ aside .mapa {
   .mainEventos img {
     max-width: 350px;
     height: 250px;
+    padding: 10px;
   }
   .mainEventos .texto {
     max-width: 350px;
-    max-height: 250px;
+    min-height: 310px;
   }
 }
