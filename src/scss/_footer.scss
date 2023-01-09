@@ -6,6 +6,12 @@ footer{
     align-items: center;
     justify-content: space-between;
     .redes{
+        a{
+            color: black;
+            &:hover{
+                color: white;
+            }
+        }
         .fa-brands{
             padding: 10px;
             font-size: 30px;

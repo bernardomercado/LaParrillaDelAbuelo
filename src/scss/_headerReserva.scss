@@ -1,5 +1,5 @@
-.headerContacto{
-    background-image: url("../img/contacto.jpg");
+.headerReserva{
+    background-image: url("../img/reserva.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 600px){
-    .headerContacto{
+    .headerReserva{
         h1{
             font-size: 50px;
         }

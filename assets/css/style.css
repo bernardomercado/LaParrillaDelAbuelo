@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
 body .navegador {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -150,7 +151,6 @@ body .navegador ul li ul li a:hover {
 .mainIndex {
   background-color: rgb(235, 215, 215);
   padding: 10px;
-  width: 100%;
 }
 .mainIndex .tarjetas {
   display: flex;
@@ -196,6 +196,12 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+footer .redes a {
+  color: black;
+}
+footer .redes a:hover {
+  color: white;
 }
 footer .redes .fa-brands {
   padding: 10px;
@@ -256,8 +262,8 @@ footer .redes .fa-brands {
 }
 .mainMenu .tarjetas {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 30px;
 }
 .mainMenu .tarjetas .tarjeta {
@@ -280,6 +286,9 @@ footer .redes .fa-brands {
   width: 100%;
   height: 50%;
 }
+.mainMenu .tarjetas .tarjeta .vino {
+  height: 65%;
+}
 .mainMenu .tarjetas .tarjeta p {
   padding-top: 10px;
   padding-bottom: 15px;
@@ -299,7 +308,7 @@ footer .redes .fa-brands {
 }
 
 .headerContacto {
-  background-image: url("../img/menu.jpg");
+  background-image: url("../img/contacto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -403,4 +412,193 @@ footer .redes .fa-brands {
 }
 .contacto .formulario .boton:hover {
   background-color: rgba(168, 122, 52, 0.555);
+}
+
+aside {
+  background-color: rgb(235, 215, 215);
+}
+aside .mapa {
+  padding: 25px;
+}
+
+.headerReserva {
+  background-image: url("../img/reserva.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headerReserva h1 {
+  color: white;
+  font-size: 100px;
+  font-style: italic;
+  text-align: center;
+}
+.headerReserva p {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .headerReserva h1 {
+    font-size: 50px;
+  }
+  .headerReserva p {
+    font-size: 25px;
+  }
+}
+.reserva {
+  background-color: rgb(235, 215, 215);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reserva .formulario {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-width: 650px;
+  padding: 5px 35px 30px 35px;
+  margin: 30px;
+  border-radius: 10px;
+  color: rgb(168, 122, 52);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reserva .formulario .titulo {
+  color: rgb(168, 122, 52);
+  padding: 14px 0;
+}
+.reserva .formulario .titulo span {
+  color: white;
+}
+.reserva .formulario label {
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+.reserva .formulario label > input {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(168, 122, 52);
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: white;
+}
+.reserva .formulario textarea {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(168, 122, 52);
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: white;
+  max-height: 150px;
+  min-height: 50px;
+}
+.reserva .formulario .boton {
+  width: 100%;
+  border: 1px solid black;
+  background-color: rgb(168, 122, 52);
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 15px 0px;
+  cursor: pointer;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.reserva .formulario .boton:hover {
+  background-color: rgba(168, 122, 52, 0.555);
+}
+
+.headerEventos {
+  background-image: url("../img/eventos.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.headerEventos h1 {
+  color: white;
+  font-size: 100px;
+  font-style: italic;
+  text-align: center;
+}
+.headerEventos p {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  padding: 5px;
+}
+.headerEventos .btn {
+  border: 0 solid black;
+  background-color: rgb(168, 122, 52);
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .headerEventos h1 {
+    font-size: 50px;
+  }
+  .headerEventos p {
+    font-size: 25px;
+  }
+}
+.mainEventos {
+  background-color: rgb(235, 215, 215);
+  padding: 10px;
+}
+.mainEventos .contenedor .card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.mainEventos .contenedor .card .texto {
+  width: 450px;
+  height: 250px;
+  text-align: justify;
+  padding: 10px;
+}
+.mainEventos .contenedor .card img {
+  width: 450px;
+  height: 250px;
+}
+
+@media (max-width: 500px) {
+  .mainEventos img {
+    max-width: 350px;
+    height: 250px;
+  }
+  .mainEventos .texto {
+    max-width: 350px;
+    max-height: 250px;
+  }
 }

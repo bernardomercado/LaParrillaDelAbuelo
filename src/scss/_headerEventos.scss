@@ -1,5 +1,5 @@
-.headerContacto{
-    background-image: url("../img/contacto.jpg");
+.headerEventos{
+    background-image: url("../img/eventos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -22,10 +22,19 @@
         text-align: center;
         padding: 5px;
     }
+    .btn{
+        border: 0 solid black;
+        background-color: rgb(168, 122, 52);
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 600px){
-    .headerContacto{
+    .headerEventos{
         h1{
             font-size: 50px;
         }
