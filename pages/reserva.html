@@ -50,42 +50,43 @@
             <div class="titulo">
                 <h2>R<span>ESERVA</span></h2>
             </div>
-            <label>
-                Fecha:
-                <input type="date" name="fecha" required>
-            </label>
-            <label>
-                Horario:
-                <input type="time" name="horario" required>
-            </label>
-            <label>
-                Número de personas:
-                <input type="number" name="cantidad" placeholder="Escriba la cantidad de personas" required>
-            </label>
-            <label>
-                <label>
-                    Tipo de evento:
-                    <input type="text" name="evento" placeholder="Escriba aquí el tipo de evento" required>
-                </label>
-                <label>
+
+            <label for="name">
                 Nombre:
-                <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+            <input type="text" id="name" name="nombre" placeholder="Escriba su nombre" required>
             </label>
-            <label>
-                Apellido:
-                <input type="text" name="apellido" placeholder="Escriba su apellido" required>
-            </label>
-            <label>
+            <label for="email">
                 E-mail:
-                <input type="email" name="email" placeholder="Escriba su email" required>
+                <input type="email" id="email" name="email" placeholder="Escriba su email" required>
             </label>
-            <label>
+            <label for="phone">
                 Celular:
-                <input type="tel" name="cel" placeholder="Escriba su celular" required>
+                <input type="tel" id="phone" name="cel" placeholder="Escriba su celular" required>
             </label>
-            <label>
+            <label for="date">
+                Fecha:
+                <input type="date" id="date" name="fecha" required>
+            </label>
+            <label for="time">
+                Horario:
+                <input type="time" id="time" name="horario" required>
+            </label>
+            <label for="guests">
+                Número de personas:
+                <select name="guests" id="guests" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </label>
+            <label for="comments">
                 Mensaje:
-                <textarea name="mensaje" placeholder="Escriba un mensaje"></textarea>
+                <textarea name="mensaje" id="comments" placeholder="Escriba un mensaje"></textarea>
             </label>
             <input type="submit" class="boton" value="Realizar reserva">
         </form>
@@ -104,5 +105,6 @@
         </div>
     </footer>
     
+    <script src="../js/main.js"></script>
 </body>
 </html>
